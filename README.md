@@ -42,7 +42,8 @@ You also need to start the clients to send transactions to the node, for example
 ```Bash
 ./client --TRANSACTION_COUNT 100 --TX_SIZE 40 127.0.0.1:8124 
 ```
-Note that the default ports for the nodes start at 127.0.0.1:8123, where each process occupies three consecutive ports, the second port is used to receive transactions, and you can follow this logic to find the port number of the process you need. You can also write script files to implement the operation of sending a certain number of transactions at regular intervals.
+We implement the clients to send packets to processes at a certain rate (as described in the paper) by writing the bash script manually (i.e., sending a certain number of transactions at regular intervals).
+Note that the default ports for the nodes start at 127.0.0.1:8123, where each process occupies three consecutive ports, the second port is used to receive transactions, and you can follow this logic to find the port number of the process you need.
 
 
 ## Some notes related to the code
